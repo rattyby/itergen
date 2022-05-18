@@ -13,5 +13,8 @@ if __name__ == '__main__':
     for item in FI.FlatIterator(nested_list):
         print(item)
 
+    flat_list = [item for item in FI.FlatIterator(nested_list)]
+    print(flat_list)
+    
     for item in flatgen(nested_list):
         print(item)
