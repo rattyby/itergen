@@ -20,9 +20,8 @@ class FlatIterator:
 
     def __init__(self, some_list) -> None:
         self.lst = self.flatter(some_list)
-        if len(self.lst):
-            self.start = -1
-            self.end = len(self.lst)
+        self.start = -1
+        self.end = len(self.lst)
 
 
     def __iter__(self):
